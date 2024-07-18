@@ -11,8 +11,7 @@
     "strict": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "types": ["jest", "@testing-library/jest-dom"]
+    "noEmit": true
   },
   "include": ["src"]
 }
