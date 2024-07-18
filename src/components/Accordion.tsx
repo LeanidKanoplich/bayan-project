@@ -34,7 +34,7 @@ const Accordion: React.FC<AccordionProps> = ({ item, path }) => {
               <Accordion key={index} item={child} path={fullPath} />
             ))
           ) : (
-            <NavLink to={fullPath} activeClassName="active-link">
+            <NavLink to={fullPath} className={({ isActive }) => isActive ? 'active-link' : ''}>
               Go to {item.root_name}
             </NavLink>
           )}
